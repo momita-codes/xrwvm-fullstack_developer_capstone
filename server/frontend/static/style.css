@@ -124,3 +124,81 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+/* contact */
+.card1{
+    /* border: rgb(103, 102, 105) 3px solid; */
+    display: flex;  
+    flex-direction: column;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+.contact-card {
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    margin-top: 5%;
+    padding-bottom: 30px;
+    border: 2px solid rgb(224, 217, 217);
+    border-radius: 50px;
+}
+
+/* Upper half */
+.contact-upper {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 12px;
+}
+
+.contact-upper img {
+    max-width: 90%;   /* controls image width */
+    max-height: 90%;  /* controls image height */
+    object-fit: contain;
+}
+
+/* Lower half */
+.contact-lower {
+    height: 50%;
+    height: 350px;
+    display: flex;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 12px;
+    padding: 12px;
+}
+
+/* Lower left image */
+.contact-image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid #6f7275;
+    padding-top: 12px;
+}
+
+.contact-image img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+/* Lower right text */
+.contact-text {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
