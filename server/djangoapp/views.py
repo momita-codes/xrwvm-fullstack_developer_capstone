@@ -54,9 +54,9 @@ def registration(request):
         # Check if user already exists
         User.objects.get(username=username)
         username_exist = True
-    except Exception as e:
+    except Exception:
         # If not, simply log this is a new user
-        logger.debug("{} is new user".format(username))
+        logger.debug(f"{} is new user")
 
     # If it is a new user
     if not username_exist:
@@ -77,7 +77,7 @@ def registration(request):
         return JsonResponse(data)
 
 
-# Update the `get_dealerships` view to render the index page 
+# Update the `get_dealerships` view to render the index page
 # with a list of dealerships
 def get_dealerships(request, state="All"):
     if (state == "All"):
