@@ -13,6 +13,7 @@ class CarMake(models.Model):
     def __str__(self):
         return self.name  # Return the name as the string representation
 
+
 # Create a Car Model model `class CarModel(models.Model):`:
 class CarModel(models.Model):
     # Many-to-One relationship
